@@ -7,6 +7,6 @@ https://www.coursera.org/learn/bootstrap-4/home/welcome
 
 # start with
 
-´´´
+```
 npm start
-´´´
+```
