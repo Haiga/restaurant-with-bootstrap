@@ -14,7 +14,28 @@
 </head>
 
 <body>
-
+    <!-- fixed-top keeps the navbar fixed quando rola a tela -->
+    <!-- navbar-expand-sm colapse elements of navbar >= sm-->
+    <nav class="navbar navbar-dark navbar-expand-sm bg-primary fixed-top">
+        <div class="container">
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Ristorante Con Fusion</a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <!-- navbar-brand para mostrar o título ou o logo >= sm-->
+                <ul class="navbar-nav mr-auto">
+                    <!-- ul navbar-nav links da navigation bar-->
+                    <!-- mr-auto right margin será utilizado-->
+                    <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -30,6 +51,12 @@
     </header>
 
     <div class="container">
+        <div class="row">
+            <ol class="col-12 breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item active"><a href="./index.html">About Us</a></li>
+            </ol>
+        </div>
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 order-sm-last col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
@@ -91,7 +118,8 @@
                         Email: <a href="mailto:confusion@food.net">confusion@food.net</a>
                     </address>
                 </div>
-                <div class="col-12 col-sm-4 align-self-center"><!-- align-self-center Alinha o conteúdo da coluna no meio da linha -->
+                <div class="col-12 col-sm-4 align-self-center">
+                    <!-- align-self-center Alinha o conteúdo da coluna no meio da linha -->
                     <div class="text-center">
                         <a href="http://google.com/+">Google+</a>
                         <a href="http://www.facebook.com/profile.php?id=">Facebook</a>
@@ -102,8 +130,10 @@
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center"> <!-- justify-content-center Seta o conteúdo da linha como centralizado, pode ser justify, left ... -->
-                <div class="col-auto"> <!-- col-auto ocupa quantas colunas sobrarem, como só tem ele na row então ocupa as 12 -->
+            <div class="row justify-content-center">
+                <!-- justify-content-center Seta o conteúdo da linha como centralizado, pode ser justify, left ... -->
+                <div class="col-auto">
+                    <!-- col-auto ocupa quantas colunas sobrarem, como só tem ele na row então ocupa as 12 -->
                     <p>© Copyright 2018 Ristorante Con Fusion</p>
                 </div>
             </div>
